@@ -15,6 +15,10 @@
     <AssemblyVersion>1.1.0</AssemblyVersion>
     <FileVersion>1.1.0</FileVersion>
     <Version>1.1.0</Version>
+    <Description>Generate Package Details JSON File</Description>
+    <PackageProjectUrl>https://github.com/meamod/MeaMod.Packager</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/meamod/MeaMod.Packager</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
 </Project>
