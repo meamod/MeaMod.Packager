@@ -1,4 +1,4 @@
-﻿using MeaMod.Packager.Models;
+﻿using MeaMod.Packager.Model;
 using System.Security.Cryptography;
 
 namespace MeaMod.Packager

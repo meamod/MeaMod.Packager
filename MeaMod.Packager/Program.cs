@@ -1,5 +1,5 @@
 ﻿using MeaMod.Packager;
-using MeaMod.Packager.Models;
+using MeaMod.Packager.Model;
 using System.Diagnostics;
 using System.Reflection;
 using System.Text.Json;

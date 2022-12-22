@@ -1,5 +1,5 @@
 ﻿
-namespace MeaMod.Packager.Models
+namespace MeaMod.Packager.Model
 {
     public class PackageHashes
     { 
