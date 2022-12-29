@@ -21,9 +21,13 @@ internal class Program
                 details.FileName = file.Name;
                 details.Version = FileVersionInfo.GetVersionInfo(file.FullName).FileVersion;
                 details.Size = file.Length;
+                details.Date = DateOnly.FromDateTime(DateTime.UtcNow);
                 details.Hashes = Hashes.GetHashes(file.FullName);
 
-                string json = JsonSerializer.Serialize(details);
+                var options = new JsonSerializerOptions(JsonSerializerDefaults.General);
+                options.Converters.Add(new DateOnlyConverter());
+
+                string json = JsonSerializer.Serialize(details, options);
                 File.WriteAllText(file.DirectoryName + @"\" + file.Name + @".json", json);
             } else
             {
