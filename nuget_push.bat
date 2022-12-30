@@ -10,7 +10,9 @@ signtool sign /n "James Weston" /fd SHA256 /d "MeaMod.Packager" /du "https://www
 )
 )
 
-dotnet pack -c Release --no-build
+rmdir /s /q MeaMod.Packager\publish
+
+dotnet pack -c Release --no-build -p:PublishDir=.\publish
 
 nuget sign "MeaMod.Packager\bin\Release\*.nupkg" -CertificateSubjectName "James Weston" -Timestamper http://timestamp.digicert.com -NonInteractive
 
