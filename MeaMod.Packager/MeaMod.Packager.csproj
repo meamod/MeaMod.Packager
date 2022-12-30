@@ -10,9 +10,9 @@
     <Authors>MeaMod Group</Authors>
     <Company>MeaMod Group</Company>
     <Copyright>Copyright © 2006-2022 MeaMod Group</Copyright>
-    <AssemblyVersion>1.2.1</AssemblyVersion>
-    <FileVersion>1.2.1</FileVersion>
-    <Version>1.2.1</Version>
+    <AssemblyVersion>1.2.2</AssemblyVersion>
+    <FileVersion>1.2.2</FileVersion>
+    <Version>1.2.2</Version>
     <Description>Generate Package Details JSON File</Description>
 	<PackAsTool>True</PackAsTool>
 	<ToolCommandName>meamodpackager</ToolCommandName>
