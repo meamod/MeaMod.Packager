@@ -28,7 +28,19 @@ internal class Program
                 options.Converters.Add(new DateOnlyConverter());
 
                 string json = JsonSerializer.Serialize(details, options);
-                File.WriteAllText(file.DirectoryName + @"\" + file.Name + @".json", json);
+
+                if (file.DirectoryName!= null)
+                {
+                    string[] paths = { file.DirectoryName, file.Name + @".json" };
+                    string fullPath = Path.Combine(paths);
+
+                    File.WriteAllText(fullPath, json);
+                }
+                else
+                {
+                    Console.WriteLine("Executable Directory not found");
+                }
+                
             } else
             {
                 Console.WriteLine("Executable not found");
